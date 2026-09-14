@@ -104,3 +104,4 @@ if env['CONF']['BUILD_ISA']:
     SimObject('O3Checker.py', sim_objects=[], tags=['isa'])
 
     GTest('vec_mem_pack.test', 'vec_mem_pack.test.cc')
+    GTest('ssbp.test', 'ssbp.test.cc', 'ssbp.cc', with_tag('gem5 trace'))
